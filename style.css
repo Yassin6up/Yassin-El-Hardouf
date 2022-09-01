@@ -1,6 +1,6 @@
 body {
-  font-size: 15pt;
-  min-height: 520vh;
+  
+  min-height: fit-content;
   /* background-color: #242364; */
 }
 
@@ -15,7 +15,7 @@ body {
 
 .top {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: #16153D;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@ body {
 }
 
 .title {
-  font-size: 2.5em;
+  font-size: 2.1em;
   -webkit-background-clip: text;
   background: text;
   -webkit-text-fill-color: transparent;
@@ -45,60 +45,40 @@ body {
     background-position: 100% 100%;
   }
 }
+.top_page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  flex-wrap: nowrap  ;
+  
+ 
+  
+}
 .creat{
   position: relative;
-  color: white;
+  color: #141D86;
   font-size: 23px;
   -webkit-text-stroke: 0.3vw #ededed;
 }
 
-.creat:before{
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color:#16153D;
-  -webkit-text-stroke: 0vw #ededed;
-  border-right: solid 2px #16153D;
-  overflow: hidden;
-  animation: animate 6s linear infinite;
-}
-@keyframes animate {
-  
-  0%,10%,100%
-  {
-    width: 0px;
-  }
-  70%,90%
-{
-    width: 100%;
-  }
-  
-}
-
 
 .profil {
-  width: 150px;
-  height: 150px;
-  margin-top: 70px;
-  margin-left: 50px;
+  width: 30%;
+  margin-left: 10%;
 }
 
 #welcoom {
-  font-size: 19px;
-  margin-left: 230px;
-  margin-top: -130px;
+  font-size: 25px;
+ margin-left: 10%;
 }
 
 .desc {
   --bg-color: #242364;
   padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: 280px;
-  margin-top: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-left: 55%;
   color: white;
   background-color: var(--bg-color);
   border-radius: 5px;
@@ -116,19 +96,20 @@ body {
   margin-top: 90px;
   border: solid 3px  #242364;
   border-radius: 5PX;
-  width: 420px;
-  height: 400px;
+  font-size: 20px;
+  width: 85%;
+  height: 50%;
   transition: 1s all;
 }
 
 .imag_code{
-  width: 200px;
+  width: 36%;
 
 }
 .about_programmer{
   border-right-color: green;
   margin-top: 30px;
-  width: 400px;
+  width: 80%;
 }
 .About_Me:hover{
   background-color: #242364;
@@ -179,7 +160,7 @@ animation: animate 3s linear infinite;
 }
 .portfolio{
  height:  250px;
- width : 200px;
+ width : 40%;
  border: 10px solid #242364;
  box-shadow: 0px 0px 10px #242364;
  overflow: hidden;
@@ -219,7 +200,7 @@ animation: animate 3s linear infinite;
   transform: translate(-50%, -50%);
   border: solid 4px #242364;
   border-radius: 10px;
-  width: 750px;
+  width: 100%;
   object-fit: cover;
 }
 @media (max-width:768px) {
@@ -232,8 +213,8 @@ animation: animate 3s linear infinite;
 
 /*service card */
 .cards{
-  width: 420px;
-  height: 400px;
+  width: 85%;
+  height: 300px;
   margin-top: 90px;
  transform-style: preserve-3d;
   display: flex;
@@ -280,11 +261,11 @@ border-radius: 5px;
 }
 .cards .face p{
   font-size: 1.3em;
-  
+ 
   
 }
 .cards .face img{
-  width:200px;
+  width:36%;
 }
 
 /*footer*/
@@ -295,14 +276,14 @@ border-radius: 5px;
   
 }
 .footer h1{
-  font-size: 2.5em;
+  font-size: 1.5em;
   -webkit-background-clip: text;
   background: text;
   -webkit-text-fill-color: transparent;
   animation: text 7.5s linear infinite alternate ;
   letter-spacing: 1px;
   font-weight: bold;
-
+  width: 100%;
   background-image: url(/image/downloadsahara.jpeg);
   
  padding-top: 80px;
@@ -334,19 +315,16 @@ border-radius: 5px;
   box-shadow: 0px 0px 10px #7a0ab1;
 }
 .social{
-  width: 300px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 .social img{
-  width: 40px;
+  width: 40%;
   margin-top: 10px;
 }
 .rutern{
-  position: absolute;
-  background-color: #7a0ab1;
-  height: 50px;
-  width: 50px;
+  width: 40%;
   border-radius: 100%;
   z-index: 4;
 }
